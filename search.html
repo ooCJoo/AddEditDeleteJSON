@@ -12,6 +12,11 @@
 
     <div class="cont"></div>
 
+    <h1>Search Suggestions</h1>
+    <input type="text" id="searchInput" placeholder="Type your search...">
+    <button id="searchButton">Search</button>
+    <ul id="suggestionList"></ul>
+
 <!-- Show result to scanner -->
 <div id="reader"></div>
 <div id="result"></div>
@@ -40,8 +45,8 @@
             .then(data => {
                 // You have the JSON data here
                 // You can now proceed to extract the specific object you need
+                
                 const specificObject = data.items.find(item => item.qrID === result);
-
                 if (specificObject) {
                 // You now have the specific object
                     console.log(specificObject);
@@ -55,7 +60,7 @@
                 container.innerHTML = template;
                 } else {
                     console.log('Object not found.');
-                    container.innerHTML = "";
+                    container.innerHTML = `<p>QR ID "${result}" has no data match found`;
                 }
         })
         .catch(error => console.error('Error:', error));
@@ -71,9 +76,72 @@
         }
         function error(err){
             console.log(err);
+            container.innerHTML = `${err}`;
         }
+
     </script>
     <!-- Scanner -->
+        <script>
+            fetch('data.json')
+            .then(response => response.json())
+            .then(data => {
+                        const searchButton = document.getElementById('searchButton');
+                        const searchInput = document.getElementById('searchInput');
+                        const suggestionList = document.getElementById('suggestionList');
+                        // You have the JSON data here
+                        // You can now proceed to extract the specific object you need
+
+
+                        searchInput.addEventListener('input', () => {
+                        const searchText = searchInput.value.toLowerCase();
+                        const filteredSuggestions = data.items.filter(item =>
+                        item.name.toLowerCase().includes(searchText)
+                        );
+                        // Clear the previous suggestions
+                            suggestionList.innerHTML = '';
+
+                        // Display the filtered suggestions
+                        filteredSuggestions.forEach(item => {
+                        const li = document.createElement('li');
+                        li.textContent = item.name;
+                        console.log(item.name)
+                        suggestionList.appendChild(li);
+                        });
+                        });
+
+
+                    searchButton.addEventListener('click', () => {
+                        const searchText = searchInput.value.toLowerCase();
+                        const itemname = data.items.filter(item => item.name.toLowerCase().includes(searchText));
+                        if (itemname.length != 0) {
+                            // You now have the specific object
+                            container.innerHTML = '';
+                            template = '';
+                            for (var i = 0; i<itemname.length; i++){
+                                    let tid = itemname[i].id;
+                                    let qid = itemname[i].qrID;
+                                    let names = itemname[i].name;
+                                    let prices = itemname[i].price;
+                                    let descriptions = itemname[i].description;
+                                            template += `<h2>ITEMS</h2>
+                                        <p>id: ${tid}</p>
+                                        <p>QR ID: ${qid}</p>
+                                        <p>Item: ${names}</p>
+                                        <p>Price: ${prices}</p>
+                                        <p>Description: ${descriptions}</p>
+                                        `
+                                }
+                                container.innerHTML = template;
+                        } else {
+                                console.log('Object not found.');
+                                container.innerHTML = `<p>name "${searchText}" has no data match found`;
+                        }
+                    });
+
+            })
+            .catch(error => console.error('Error:', error));
+
+        </script>
 
 </body>
 </html>

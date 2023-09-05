@@ -6,6 +6,20 @@
             "name": "Mantika 1/2",
             "decription": null,
             "price": 20
+        },
+        {
+            "id": 2,
+            "qrID": "012345678905",
+            "name": "sadWOT",
+            "decription": null,
+            "price": 20
+        },
+        {
+            "id": 3,
+            "qrID": "012345678905",
+            "name": "sadasdWot",
+            "decription": null,
+            "price": 20
         }
     ]
 }
