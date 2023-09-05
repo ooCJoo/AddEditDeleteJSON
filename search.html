@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"> </script>
+    <script src="https://unpkg.com/html5-qrcode@2.3.8/html5-qrcode.min.js"></script>
+</head>
+<body>
+    <h1>Scan item QR or put item name</h1>
+
+    <div class="cont"></div>
+
+<!-- Show result to scanner -->
+<div id="reader"></div>
+<div id="result"></div>
+<!-- Show result to scanner -->
+
+
+
+    <!-- Scanner -->
+    <script>
+        const container = document.querySelector('.cont');
+        let template;
+        const scanner = new Html5QrcodeScanner('reader', {
+            qrbox: {
+                width: 250,
+                height: 250,
+            },
+            fps: 20,
+        });
+        let results;
+        scanner.render(success, error);
+        function success(result) {
+
+
+            fetch('data.json')
+            .then(response => response.json())
+            .then(data => {
+                // You have the JSON data here
+                // You can now proceed to extract the specific object you need
+                const specificObject = data.items.find(item => item.qrID === result);
+
+                if (specificObject) {
+                // You now have the specific object
+                    console.log(specificObject);
+                    template = `<h2>ITEMS</h2>
+                            <p>id: ${specificObject.id}</p>
+                            <p>QR ID: ${specificObject.qrID}</p>
+                            <p>Item: ${specificObject.name}</p>
+                            <p>Price: ${specificObject.price}</p>
+                            <p>Description: ${specificObject.description}</p>
+                            `
+                container.innerHTML = template;
+                } else {
+                    console.log('Object not found.');
+                    container.innerHTML = "";
+                }
+        })
+        .catch(error => console.error('Error:', error));
+
+            $.getJSON("data.json", function(json) {
+            console.log(json.items); 
+            });
+
+            results = result;
+            console.log(result);
+            document.getElementById('result').innerHTML = `
+            <h2>Succes!</h2>
+            <p><a href="${result}">${result}</a></p>
+            `;
+          
+        }
+        function error(err){
+            console.log(err);
+        }
+    </script>
+    <!-- Scanner -->
+
+</body>
+</html>

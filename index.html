@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"> </script>
+    <script src="https://unpkg.com/html5-qrcode@2.3.8/html5-qrcode.min.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            var data = [];
+            $.getJSON('data.json', function(data){
+                $.each(data.items, function(i, f) {
+                    var tblRow = "<tr>" + "<td>" + f.id + "</td>" +
+                    "<td>" + f.qrID + "</td>" + "<td>" + f.name + "</td>" + "<td>" + f.price + "</td>" + "<td>" + f.description + "</td>" + "</tr>"
+                    $(tblRow).appendTo("#userdata tbody"); 
+                    console.log(f.id)         
+                });
+            });
+        });
+        
+        $(function() {
+            $.getJSON('data.json', function(data){
+                var matchingResults = JSON['items'].filter(function(x){ return x.qrID == 123; });
+                console.log(matchingResults);
+            });
+        });
+
+    </script>
+</head>
+<body>
+    
+    <h1>Scan item QR or put item name</h1>
+    <a href="search.html">Search Item</a>
+
+<!-- Show result to scanner -->
+<div id="reader"></div>
+<div id="result"></div>
+<!-- Show result to scanner -->
+
+    <!-- Scanner -->
+    <script>
+        const scanner = new Html5QrcodeScanner('reader', {
+            qrbox: {
+                width: 250,
+                height: 250,
+            },
+            fps: 20,
+        });
+
+        scanner.render(success, error);
+        function success(result) {
+
+
+
+            console.log(result);
+            var matchingResults = JSON[getJSON('data.json', data)].filter(function(x){ return x.qrID == 123; });
+            
+            document.getElementById('result').innerHTML = `
+            <h2>Succes!</h2>
+            <h1>${matchingResults}<h1>
+            <p><a href="${result}">${result}</a></p>
+            `;
+        }
+        function error(err){
+            console.log(err);
+        }
+    </script>
+    <!-- Scanner -->
+
+    
+
+    <!-- show data in JSON file -->
+    <div class="wrapper">
+<div class="profile">
+   <table id= "userdata" border="2">
+  <thead>
+            <th>ID</th>
+            <th>QR ID</th>
+            <th>Item Name</th>
+            <th>Price</th>
+            <th>Description</th>
+        </thead>
+      <tbody>
+
+       </tbody>
+   </table>
+</div>
+</div>
+ <!-- show data in JSON file -->
+</body>
+</html>

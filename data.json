@@ -1,0 +1,11 @@
+{
+    "items": [
+        {
+            "id": 1,
+            "qrID": "012345678905",
+            "name": "Mantika 1/2",
+            "decription": null,
+            "price": 20
+        }
+    ]
+}
