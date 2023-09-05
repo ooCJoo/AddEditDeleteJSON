@@ -32,10 +32,10 @@
             },
             fps: 20,
         });
-        let results;
         scanner.render(success, error);
-        function success(result) {
+        let scans = "";
 
+        function success(result) {
 
             fetch('data.json')
             .then(response => response.json())
@@ -47,29 +47,31 @@
                 if (specificObject) {
                 // You now have the specific object
                     console.log(specificObject);
-                    template = `<h2>ITEM</h2>
-                            <h3>${name}</h3>
-                            <h4>PRICE ${price}</h4>
+                    template = `<hr><h2>ITEMS</h2>
+                            <h3>${specificObject.name}</h3>
+                            <h4>PRICE ${specificObject.price}</h4>
                             <p>ID: ${specificObject.id}</p>
                             <p>QR ID: ${specificObject.qrID}</p>
                             <p>Description: ${specificObject.description}</p>
+                            <hr>
                             `
                 container.innerHTML = template;
                 } else {
                     console.log('Object not found.');
                     container.innerHTML = `<p>QR ID "${result}" has no data match found`;
                 }
+                scans = result;
         })
         .catch(error => console.error('Error:', error));
-
             console.log(result);
           
         }
         function error(err){
             console.log(err);
             container.innerHTML = `${err}`;
+            scans = err;
         }
-
+   
     </script>
     <!-- Scanner -->
         <script>
@@ -115,13 +117,13 @@
                                     let names = itemname[i].name;
                                     let prices = itemname[i].price;
                                     let descriptions = itemname[i].description;
-                                            template += `<h2>ITEM</h2>
+                                            template += `<hr><h2>ITEM</h2>
                                         <h3>${names}</h3>
                                         <h4>PRICE ${prices}</h4>
                                         <p>id: ${tid}</p>
                                         <p>QR ID: ${qid}</p>
                                         <p>Description: ${descriptions}</p>
-                                        <br>
+                                        <hr>
                                         `
                                 }
                                 container.innerHTML = template;
