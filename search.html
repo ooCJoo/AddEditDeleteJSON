@@ -8,21 +8,18 @@
     <script src="https://unpkg.com/html5-qrcode@2.3.8/html5-qrcode.min.js"></script>
 </head>
 <body>
-    <h1>Scan item QR or put item name</h1>
-
-    <div class="cont"></div>
-
-    <h1>Search Suggestions</h1>
+    <h1>Scan item QR</h1>
+<!-- Show result to scanner -->
+<div id="reader"></div>
+<!-- Show result to scanner -->
+    <h1>Search Item Name</h1>
     <input type="text" id="searchInput" placeholder="Type your search...">
     <button id="searchButton">Search</button>
     <ul id="suggestionList"></ul>
 
-<!-- Show result to scanner -->
-<div id="reader"></div>
-<div id="result"></div>
-<!-- Show result to scanner -->
-
-
+    <!-- display result -->
+    <div class="cont"></div>
+    <!-- display result -->
 
     <!-- Scanner -->
     <script>
@@ -50,11 +47,11 @@
                 if (specificObject) {
                 // You now have the specific object
                     console.log(specificObject);
-                    template = `<h2>ITEMS</h2>
-                            <p>id: ${specificObject.id}</p>
+                    template = `<h2>ITEM</h2>
+                            <h3>${name}</h3>
+                            <h4>PRICE ${price}</h4>
+                            <p>ID: ${specificObject.id}</p>
                             <p>QR ID: ${specificObject.qrID}</p>
-                            <p>Item: ${specificObject.name}</p>
-                            <p>Price: ${specificObject.price}</p>
                             <p>Description: ${specificObject.description}</p>
                             `
                 container.innerHTML = template;
@@ -65,13 +62,7 @@
         })
         .catch(error => console.error('Error:', error));
 
-
-            results = result;
             console.log(result);
-            document.getElementById('result').innerHTML = `
-            <h2>Succes!</h2>
-            <p><a href="${result}">${result}</a></p>
-            `;
           
         }
         function error(err){
@@ -104,17 +95,18 @@
                         filteredSuggestions.forEach(item => {
                         const li = document.createElement('li');
                         li.textContent = item.name;
-                        console.log(item.name)
                         suggestionList.appendChild(li);
                         });
                         });
 
 
                     searchButton.addEventListener('click', () => {
-                        const searchText = searchInput.value.toLowerCase();
-                        const itemname = data.items.filter(item => item.name.toLowerCase().includes(searchText));
+                        const searchText = searchInput.value != "" ? searchInput.value.toLowerCase() : null;
+                        const itemname = data.items.filter(item => searchText.value !== "" && item.name.toLowerCase().includes(searchText));
+                        console.log(itemname);
                         if (itemname.length != 0) {
                             // You now have the specific object
+                            suggestionList.innerHTML = '';
                             container.innerHTML = '';
                             template = '';
                             for (var i = 0; i<itemname.length; i++){
@@ -123,12 +115,13 @@
                                     let names = itemname[i].name;
                                     let prices = itemname[i].price;
                                     let descriptions = itemname[i].description;
-                                            template += `<h2>ITEMS</h2>
+                                            template += `<h2>ITEM</h2>
+                                        <h3>${names}</h3>
+                                        <h4>PRICE ${prices}</h4>
                                         <p>id: ${tid}</p>
                                         <p>QR ID: ${qid}</p>
-                                        <p>Item: ${names}</p>
-                                        <p>Price: ${prices}</p>
                                         <p>Description: ${descriptions}</p>
+                                        <br>
                                         `
                                 }
                                 container.innerHTML = template;
@@ -136,6 +129,7 @@
                                 console.log('Object not found.');
                                 container.innerHTML = `<p>name "${searchText}" has no data match found`;
                         }
+                    
                     });
 
             })
