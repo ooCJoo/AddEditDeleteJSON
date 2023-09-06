@@ -138,6 +138,345 @@
          "qrID": "4800249005776",
          "name": "Bingo Corned Beef",
          "price": 25
+        },
+        {
+         "id": 24,
+         "qrID": "argentina40",
+         "name": "Holiday Corned Beef",
+         "price": 40
+        },
+        {
+         "id": 25,
+         "qrID": "4800249047158",
+         "name": "CDO Chicken Flakes 150g",
+         "price": 36
+        },
+        {
+         "id": 26,
+         "qrID": "4800022100070",
+         "name": "Hunt's Pork and Beans 175g",
+         "price": 25
+        },
+        {
+         "id": 27,
+         "qrID": "555tuna",
+         "name": "555 Tuna",
+         "price": 33
+        },
+        {
+         "id": 28,
+         "qrID": "wowulan25",
+         "name": "Wow Ulam 155g",
+         "price": 25
+        },
+        {
+         "id": 29,
+         "qrID": "748485100401",
+         "name": "Century Tuna 155g",
+         "price": 38
+        },
+        {
+         "id": 30,
+         "qrID": "4800066122519",
+         "name": "Holiday Carne Norte",
+         "price": 34
+        },
+        {
+         "id": 31,
+         "qrID": "748485200101",
+         "name": "Lucky 7 Sardines",
+         "price": 21
+        },
+        {
+         "id": 32,
+         "qrID": "4800575884502",
+         "name": "Alpine 140ml",
+         "price": 40
+        },
+        {
+         "id": 33,
+         "qrID": "4806516761888",
+         "name": "Jersey Condesed Creamer 390g",
+         "price": 48
+        },
+        {
+         "id": 34,
+         "qrID": "4800575144910",
+         "name": "Cow Bell Condensarapn 374g",
+         "price": 48
+        },
+        {
+         "id": 35,
+         "qrID": "748485401225",
+         "name": "Angel Kremdensada 410ml",
+         "price": 70
+        },
+        {
+         "id": 36,
+         "qrID": "748485400860",
+         "name": "Angel Evaporada 365ml",
+         "price": 31
+        },
+        {
+         "id": 37,
+         "qrID": "480009390456",
+         "name": "Season Tropical",
+         "price": 85
+        },
+        {
+         "id": 38,
+         "qrID": "4902430945554",
+         "name": "Safe Guard 60g",
+         "decription": "all kind with same gram",
+         "price": 21
+        },
+        {
+         "id": 39,
+         "qrID": "4806507823481",
+         "name": "Silka 65g",
+         "decription": "all kind with same gram",
+         "price": 21
+        },
+        {
+         "id": 40,
+         "qrID": "4800011782805",
+         "name": "Bioderm 60g",
+         "decription": "all kind with same gram",
+         "price": 18
+        },
+        {
+         "id": 41,
+         "qrID": "4809014128399",
+         "name": "Kojie San 45g",
+         "price": 25
+        },
+        {
+         "id": 42,
+         "qrID": "4902430178259",
+         "name": "Perla 110g",
+         "decription": "all kind with same gram",
+         "price": 17
+        },
+        {
+         "id": 43,
+         "qrID": "748485150079",
+         "name": "Coco Mama Fresh Gata",
+         "price": 35
+        },
+        {
+         "id": 44,
+         "qrID": "4801668100295",
+         "name": "Papa Banana Ketchup 320g",
+         "price": 27
+        },
+        {
+         "id": 45,
+         "qrID": "4801668200056",
+         "name": "Mafran The Original 320g",
+         "price": 23
+        },
+        {
+         "id": 46,
+         "qrID": "4800045310241",
+         "name": "Smart Dishwasher 200g",
+         "decription": "all kind with same gram",
+         "price": 25
+        },
+        {
+         "id": 47,
+         "qrID": "4800045310272",
+         "name": "Smart Dishwasher 400g",
+         "decription": "all kind with same gram",
+         "price": 48
+        },
+        {
+         "id": 48,
+         "qrID": "4800047840036",
+         "name": "Zonrox Original 250ml",
+         "price": 17
+        },
+        {
+         "id": 49,
+         "qrID": "4800047840029",
+         "name": "Zonrox Original 500ml",
+         "price": 25
+        },
+        {
+         "id": 50,
+         "qrID": "4800047841781",
+         "name": "Zonrox ColorSafe 95ml",
+         "price": 17
+        },
+        {
+         "id": 51,
+         "qrID": "4800047841729",
+         "name": "Zonrox ColorSafe 225ml",
+         "price": 25
+        },
+        {
+         "id": 52,
+         "qrID": "4800220604752",
+         "name": "Tanduay Select Blended Rum 700ml",
+         "price": 130
+        },
+        {
+         "id": 53,
+         "qrID": "4800142110089",
+         "name": "Empirador Light 750ml + Chaser Iced Tea",
+         "decription": "with Chaser Iced Tea",
+         "price": 145
+        },
+        {
+         "id": 54,
+         "qrID": "4800130100030",
+         "name": "Gin Genebra S. Miguel 350ml",
+         "price": 70
+        },
+        {
+         "id": 55,
+         "qrID": "4800142113523",
+         "name": "The Bar Gin 700ml",
+         "decription": "all kind with same gram",
+         "price": 130
+        },
+        {
+         "id": 56,
+         "qrID": "4800220520359",
+         "name": "Jamaica Lime Juice",
+         "price": 52
+        },
+        {
+         "id": 57,
+         "qrID": "4800130121097",
+         "name": "Primera Light 750ml",
+         "price": 125
+        },
+        {
+         "id": 58,
+         "qrID": "4800130855824",
+         "name": "G.S.M Blue 700ml",
+         "decription": "all kind with same gram",
+         "price": 130
+        },
+        {
+         "id": 59,
+         "qrID": "kremils10",
+         "name": "Kremil-S 178mg\/233mg\/3mg",
+         "price": 10
+        },
+        {
+         "id": 60,
+         "qrID": "fastrelax10",
+         "name": "Fast Relax 325mg\/200mg",
+         "price": 10
+        },
+        {
+         "id": 61,
+         "qrID": "loperamide3",
+         "name": "Loperamide",
+         "price": 3
+        },
+        {
+         "id": 62,
+         "qrID": "paradelconforte5",
+         "name": "Paracetamol Delcon Forte",
+         "price": 5
+        },
+        {
+         "id": 63,
+         "qrID": "paraflugard250",
+         "name": "Paracetamol Flugard 500mg",
+         "price": 2.5
+        },
+        {
+         "id": 64,
+         "qrID": "dicycloverine2",
+         "name": "Dicycloverine",
+         "price": 2
+        },
+        {
+         "id": 65,
+         "qrID": "alaxanfr10",
+         "name": "Alaxan FR",
+         "price": 10
+        },
+        {
+         "id": 66,
+         "qrID": "cetirizine3",
+         "name": "Cetirizine",
+         "price": 3
+        },
+        {
+         "id": 67,
+         "qrID": "cotrimoxazole5",
+         "name": "Cotrimoxazole Zolbach",
+         "price": 5
+        },
+        {
+         "id": 68,
+         "qrID": "mefenamicacid4",
+         "name": "Mefenamic Acid",
+         "price": 4
+        },
+        {
+         "id": 69,
+         "qrID": "amoxicillin5",
+         "name": "Amoxicillin",
+         "price": 5
+        },
+        {
+         "id": 70,
+         "qrID": "ascorbicacid5",
+         "name": "Ascorbic Acid",
+         "price": 5
+        },
+        {
+         "id": 71,
+         "qrID": "bioflu10",
+         "name": "Bioflu",
+         "price": 10
+        },
+        {
+         "id": 72,
+         "qrID": "para4feversyrup",
+         "name": "Paracetamol 4FEVER Syrup 60ml",
+         "price": 40
+        },
+        {
+         "id": 73,
+         "qrID": "lagundileafsyrup80",
+         "name": "Vitex Negundo L.(Lagundi Leaf) Syrup 60ml",
+         "price": 80
+        },
+        {
+         "id": 74,
+         "qrID": "dicycloverinesyrup40",
+         "name": "Dicycloverine Diaciel Syrup 60ml",
+         "price": 40
+        },
+        {
+         "id": 75,
+         "qrID": "amoxicillinsyrup50",
+         "name": "Amoxicillin Moxylor Syrup 60ml",
+         "price": 50
+        },
+        {
+         "id": 76,
+         "qrID": "cetirizinesyrup50",
+         "name": "Cetirizine Dialix Syrup 60ml",
+         "price": 60
+        },
+        {
+         "id": 77,
+         "qrID": "pills55",
+         "name": "Pills",
+         "price": 55
+        },
+        {
+         "id": 78,
+         "qrID": "4806510788393",
+         "name": "Inihaw na Bangus Premium Fish Cracker 40g",
+         "price": 10
         }
        ]
 }
