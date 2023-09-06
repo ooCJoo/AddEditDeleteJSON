@@ -16,5 +16,5 @@ Using a JSON file to store the data of the items
     -and your Done!
 
     
-Theirs a two method to get the specific item information - Can Search the item normally, and using your device camera you can scan the item bar/qr code of the item (using a library called html5-qrcode) to identify the item and get the information.
+Theirs a two method to get the specific item information - Can Search the item normally, and using your device camera you can scan the item's bar/qr code (using a library called html5-qrcode) to identify the item and get the information.
 No CSS
