@@ -1,4 +1,143 @@
 {
     "items": 
-    [{"id":1,"qrID":"mantika14","name":"Mantika 1/4","decription":"","price":20},{"id":2,"qrID":"mantika12","name":"Mantika 1/2","decription":"","price":39},{"id":3,"qrID":"mantika1k","name":"Mantika 1kilo","decription":"","price":78},{"id":4,"qrID":"rh1l","name":"Red Horse","decription":"","price":120},{"id":5,"qrID":4801668602027,"name":"Datu Puti Vinegar 200ml","decription":"","price":10},{"id":6,"qrID":4801668602034,"name":"Datu Puti Soy Sauce 200ml","decription":"","price":12},{"id":7,"qrID":4801668602225,"name":"Datu Puti Vinegar 100ml","decription":"","price":7},{"id":8,"qrID":4801668602218,"name":"Datu Puti Soy Sauce 100ml","decription":"","price":8},{"id":9,"qrID":4800344001949,"name":"Silver Swan Soy Sauce 200ml","decription":"","price":12},{"id":10,"qrID":4800344001963,"name":"Silver Swan Soy Sauce 100ml","decription":"","price":8},{"id":11,"qrID":4800344004940,"name":"Silver Swan Vinegar 200ml","decription":"","price":10},{"id":12,"qrID":748485915418,"name":"Fresca Tuna Afritada 150g","decription":"","price":28},{"id":13,"qrID":748485915395,"name":"Fresca Tuna Hot & Spicy 150g","decription":"","price":28},{"id":14,"qrID":748485800431,"name":"Argentina Corned Beef 150g","decription":"","price":40},{"id":15,"qrID":4800066121154,"name":"Holiday Beef Loaf 150g","decription":"","price":25},{"id":16,"qrID":4800344001420,"name":"Silver Swan Soy Sauce 385ml","decription":"","price":25},{"id":17,"qrID":4800344004421,"name":"Silver Swan Vinegar 385ml","decription":"","price":23},{"id":18,"qrID":748485900056,"name":"Fresca Tuna 175g","decription":"","price":31},{"id":19,"qrID":4800527629083,"name":"Young's Town 155g","decription":"","price":25},{"id":20,"qrID":4806504710911,"name":"Mega Corned Sardines 155g","decription":"","price":15},{"id":21,"qrID":748485800738,"name":"Argentina Beef Loaf 150g","decription":"","price":25},{"id":22,"qrID":748485801728,"name":"Lucky 7 Carne Norte","decription":"","price":25},{"id":23,"qrID":4800249005776,"name":"Bingo Corned Beef","decription":"","price":25}]
+    [
+        {
+         "id": 1,
+         "qrID": "mantika14",
+         "name": "Mantika 1\/4",
+         "price": 20
+        },
+        {
+         "id": 2,
+         "qrID": "mantika12",
+         "name": "Mantika 1\/2",
+         "price": 39
+        },
+        {
+         "id": 3,
+         "qrID": "mantika1k",
+         "name": "Mantika 1kilo",
+         "price": 78
+        },
+        {
+         "id": 4,
+         "qrID": "rh1l",
+         "name": "Red Horse",
+         "price": 120
+        },
+        {
+         "id": 5,
+         "qrID": "4801668602027",
+         "name": "Datu Puti Vinegar 200ml",
+         "price": 10
+        },
+        {
+         "id": 6,
+         "qrID": "4801668602034",
+         "name": "Datu Puti Soy Sauce 200ml",
+         "price": 12
+        },
+        {
+         "id": 7,
+         "qrID": "4801668602225",
+         "name": "Datu Puti Vinegar 100ml",
+         "price": 7
+        },
+        {
+         "id": 8,
+         "qrID": "4801668602218",
+         "name": "Datu Puti Soy Sauce 100ml",
+         "price": 8
+        },
+        {
+         "id": 9,
+         "qrID": "4800344001949",
+         "name": "Silver Swan Soy Sauce 200ml",
+         "price": 12
+        },
+        {
+         "id": 10,
+         "qrID": "4800344001963",
+         "name": "Silver Swan Soy Sauce 100ml",
+         "price": 8
+        },
+        {
+         "id": 11,
+         "qrID": "4800344004940",
+         "name": "Silver Swan Vinegar 200ml",
+         "price": 10
+        },
+        {
+         "id": 12,
+         "qrID": "748485915418",
+         "name": "Fresca Tuna Afritada 150g",
+         "price": 28
+        },
+        {
+         "id": 13,
+         "qrID": "748485915395",
+         "name": "Fresca Tuna Hot & Spicy 150g",
+         "price": 28
+        },
+        {
+         "id": 14,
+         "qrID": "748485800431",
+         "name": "Argentina Corned Beef 150g",
+         "price": 40
+        },
+        {
+         "id": 15,
+         "qrID": "4800066121154",
+         "name": "Holiday Beef Loaf 150g",
+         "price": 25
+        },
+        {
+         "id": 16,
+         "qrID": "4800344001420",
+         "name": "Silver Swan Soy Sauce 385ml",
+         "price": 25
+        },
+        {
+         "id": 17,
+         "qrID": "4800344004421",
+         "name": "Silver Swan Vinegar 385ml",
+         "price": 23
+        },
+        {
+         "id": 18,
+         "qrID": "748485900056",
+         "name": "Fresca Tuna 175g",
+         "price": 31
+        },
+        {
+         "id": 19,
+         "qrID": "4800527629083",
+         "name": "Young's Town 155g",
+         "price": 25
+        },
+        {
+         "id": 20,
+         "qrID": "4806504710911",
+         "name": "Mega Corned Sardines 155g",
+         "price": 15
+        },
+        {
+         "id": 21,
+         "qrID": "748485800738",
+         "name": "Argentina Beef Loaf 150g",
+         "price": 25
+        },
+        {
+         "id": 22,
+         "qrID": "748485801728",
+         "name": "Lucky 7 Carne Norte",
+         "price": 25
+        },
+        {
+         "id": 23,
+         "qrID": "4800249005776",
+         "name": "Bingo Corned Beef",
+         "price": 25
+        }
+       ]
 }
