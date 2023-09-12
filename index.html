@@ -58,10 +58,8 @@
             },
             fps: 20,
          });
-         scanner.render(success, error);       
-        });      
-
-
+         scanner.render(success, error);
+               
         function success(result) {
             fetch('data.json')
             .then(response => response.json())
@@ -82,9 +80,11 @@
                             <hr>
                             `
                 container.innerHTML = template;
+                checker = 1;
                 scanner.clear();
                 location.href = "#";
                 } else {
+                    checker = 1;
                     scanner.clear();
                     location.href = "#";
                     console.log('Object not found.');
@@ -93,6 +93,7 @@
         })
         .catch(error => console.error('Error:', error));
             console.log(result);
+            checker = 1;
             scanner.clear();
             location.href = "#";
             button.style.display = "block";
@@ -100,8 +101,8 @@
         function error(err){
             console.log(err);
             container.innerHTML = `${err}`;
-            scans = err;
         }
+    });   
     </script>
     <!-- Scanner -->
         <script>
