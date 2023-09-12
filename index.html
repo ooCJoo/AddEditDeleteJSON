@@ -92,7 +92,11 @@
                             <hr>
                             `
                 container.innerHTML = template;
+                scanner.clear();
+                location.href = "#";
                 } else {
+                    scanner.clear();
+                    location.href = "#";
                     console.log('Object not found.');
                     container.innerHTML = `<p>QR ID "${result}" has no data match found`;
                 }
