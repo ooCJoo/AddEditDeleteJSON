@@ -3,13 +3,13 @@
     [
         {
          "id": 1,
-         "qrID": "mantika14",
+         "qrID": "012345678905",
          "name": "Mantika 1\/4",
          "price": 20
         },
         {
          "id": 2,
-         "qrID": "mantika12",
+         "qrID": "640509040147",
          "name": "Mantika 1\/2",
          "price": 39
         },
@@ -477,6 +477,12 @@
          "qrID": "4806510788393",
          "name": "Inihaw na Bangus Premium Fish Cracker 40g",
          "price": 10
-        }
+        },
+        {
+            "id": 79,
+            "qrID": "4800361410816",
+            "name": "Bear Brand Swak Pack 33g",
+            "price": 12
+           }
        ]
 }
